@@ -23,11 +23,11 @@
   </header>
   
   <main class="hero-section">
-    <h1>Realize uma avaliação completa da sua visão hoje</h1>
+    
     <div class="glasses">
-      <span>A</span><span>B</span>
-      <span class="highlight">C</span><span class="highlight">D</span>
-      <span>E</span><span>F</span>
+      <h1>ㅤ</h1>
+      <span class="highlight">ㅤ</span><span class="highlight">ㅤ</span>
+      <span>ㅤ</span><span>ㅤ</span>
     </div>
     <button class="cta-button">Marcar uma consulta</button>
   </main>
@@ -55,16 +55,16 @@
     
     <div class="card-container">
       <div class="card">
-        <div class="icon">
-          <img src="imagens/icon-xonsulta.png" alt="Ícone Consultas de Rotina">
+        <div>
+          <figure><img src="imagens/icon-xonsulta.png"></figure>
         </div>
         <h3>Consultas de Rotina</h3>
         <p>Para questões de resolução simples, como dores de cabeça, problemas de visão, conjuntivite, entre outros.</p>
         <button class="learn-more">Saiba mais</button>
       </div>
       <div class="card">
-        <div class="icon">
-          <img src="imagens/icon-exame.png" alt="Ícone Agende seus Exames">
+        <div>
+          <figure><img src="imagens/icon-exame.png" alt="Ícone Agende seus Exames"></figure>
         </div>
         <h3>Agende seus Exames</h3>
         <p>Agende facilmente e online os exames recomendados pelos seus médicos.</p>
@@ -72,7 +72,7 @@
       </div>
       <div class="card">
         <div class="icon">
-          <img src="imagens/icon-virtual.png" alt="Ícone Consulta Virtual">
+          <figure><img src="imagens/icon-virtual.png" alt="Ícone Consulta Virtual"></figure>
         </div>
         <h3>Consulta Virtual</h3>
         <p>Realize sua consulta oftalmológica de qualquer lugar, mantendo o mesmo padrão de qualidade FocusClinic.</p>
@@ -106,8 +106,11 @@
     </div>
   </section>
 
-  <!-- Seção Médico -->
+  
   <section class="doctor">
+    <div class="doctor-image">
+      <img src="imagens/medico.png" alt="Dr. Cadu Maverick">
+    </div>
     <div class="doctor-info">
       <h2>Dr. Cadu Maverick</h2>
       <p>Cadu Maverick dirige o corpo clínico da FocusClinic. Com mais de quatro décadas de experiência em oftalmologia, formou-se em Medicina pela Escola Paulista de Medicina, em São Paulo, onde também realizou sua residência em Oftalmologia.</p>
@@ -115,12 +118,10 @@
       <p>Palestrante trilíngue (inglês, português e espanhol), participa regularmente de encontros oftalmológicos no Brasil, América Latina, Estados Unidos e Europa, compartilhando com prazer sua vasta experiência profissional.</p>
       <a href="#">>> Conheça nossa equipe</a>
     </div>
-    <div class="doctor-image">
-      <img src="imagens/medico.png" alt="Dr. Cadu Maverick">
-    </div>
+    
   </section>
 
-  <!-- Últimos Artigos -->
+  
   <section class="articles">
     <h2>Últimos Artigos</h2>
     <div class="article-cards">
@@ -144,8 +145,20 @@
       </div>
     </div>
   </section>
+
+ 
+  <div id="map">
+    
+  <div style="text-align: center;">
+    <h3>LOCALIZAÇÃO</h3>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7949.940904504045!2d-37.97524629444154!3d-4.944562784883477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9829eed8e44cd%3A0x3dd79f14e6ed0729!2sUFC%20-%20Russian%20Campus!5e0!3m2!1sen!2sbr!4v1731957626201!5m2!1sen!2sbr" width="600" height="400" style="border:10;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+    </div>
+    </iframe>
+</div>
+
   
-  <!-- Informações -->
+ 
 
   <footer>
     <div class="footer-container">
@@ -178,3 +191,28 @@
       </div>
     </div>
   </footer>
+
+  
+
+  <script>
+    function initMap() {
+        
+        const russas = { lat: -4.940933, lng: -37.972222 };
+
+       
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 14, 
+            center: russas,
+        });
+
+       
+        const marker = new google.maps.Marker({
+            position: russas,
+            map: map,
+            title: "Russas, CE",
+        });
+    }
+
+  
+    window.onload = initMap;
+</script>
