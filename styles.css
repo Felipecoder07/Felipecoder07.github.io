@@ -17,7 +17,16 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #0A1445;
+    background-color: #0e1952;
+  }
+  .hero-section {
+    background-image: url('./imagens/azul.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; 
+    padding: 2rem;
+    text-align: center; 
   }
   .banner {
     width: 193px;
@@ -38,7 +47,7 @@ body {
   .navbar ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 41px;
   }
   
   .navbar a {
@@ -55,10 +64,6 @@ body {
     cursor: pointer;
   }
   
-  .hero-section {
-    text-align: center;
-    padding: 50px 20px;
-  }
   
   .hero-section h1 {
     font-size: 2rem;
@@ -68,8 +73,8 @@ body {
   .glasses {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin: 20px 0;
+    gap: 600px;
+    margin: 260px 0;
     font-size: 1.5rem;
   }
   
@@ -88,13 +93,20 @@ body {
     cursor: pointer;
   }
   
+  
   .about {
-    padding: 2rem;
-    text-align: center;
-    color: white;
-    background-color: #181818;
+      padding: 2rem; 
+      text-align: center; 
+      font-size: 1.2rem; 
+      font-weight: bold; 
+      line-height: 1.5; 
+      margin: 1rem auto; 
+      max-width: 800px; 
   }
 
+  .about h1{
+    color: #0066ff;
+  }
   .stats {
     display: flex;
     justify-content: space-around;
@@ -146,8 +158,8 @@ body {
   }
   
   .card .icon img {
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
     margin-bottom: 20px;
   }
   
@@ -180,8 +192,8 @@ body {
   .clinic-highlight {
     display: flex;
     flex-wrap: wrap;
-    padding: 50px 20px;
-    background-color: #0A453E;
+    padding: 70px 20px;
+      background-image: url('./imagens/verde.png'); 
     color: white;
   }
   
@@ -195,7 +207,7 @@ body {
   
   .clinic-highlight .text {
     flex: 1;
-    max-width: 600px;
+    max-width: 700px;
   }
   
   .clinic-highlight h2 {
@@ -247,32 +259,62 @@ body {
     flex: 1;
   }
   
-  .doctor {
+  
+.doctor {
+    display: flex; 
+    gap: 1rem; 
+    background-color: #0A453E; 
+    padding: 2rem; 
+    color: white; 
+    align-items: center; 
+    max-width: 1900px; 
+    margin: 0 auto;
     display: flex;
-    gap: 2rem;
-    background-color: #0A453E;
-    padding: 2rem;
-    color: white;
-  }
+    flex-wrap: wrap;
+    padding: 99px 20px;
+    background-image: url('./imagens/verde.png'); 
+}
+
+.doctor .doctor-image {
+    flex: 1; 
+    text-align: center; 
+}
+
+.doctor .doctor-image img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+.doctor .doctor-info {
+    flex: 1; 
+    text-align: left; 
+}
+
+.doctor .doctor-info h2 {
+    font-size: 2rem;
+    color: #00d7ff; 
+    margin-bottom: 1rem;
+    
+}
+
+.doctor .doctor-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+
+
+ #map {
+  height: 500px; 
+  width: 100%; 
+  margin: 1;
+  background-color: #1a1a1a;
+}
   
-  .doctor-info {
-    flex: 1;
-  }
-  
-  .doctor-info a {
-    color: #00b0ff;
-    text-decoration: none;
-  }
-  
-  .doctor-image img {
-    max-width: 100%;
-    border-radius: 10px;
-  }
-  
-  /* Artigos */
+
   .articles {
-    background-color: #222222;
-    padding: 2rem;
+    background-color: #1a1a1a;
     color: white;
     text-align: center;
   }
@@ -284,7 +326,7 @@ body {
   }
   
   .article-card {
-    background-color: #222222;
+    background-color: #1a1a1a;
     color: white;
     width: 30%;
     border-radius: 60px;
@@ -307,7 +349,7 @@ body {
     font-weight: bold;
   }
 
-  /* Informações */
+
 
   footer {
     background-color: #0A1445; 
@@ -361,8 +403,8 @@ body {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    height: 150px; 
-    width: 150px; 
+    height: 200px; 
+    width: 200px; 
     margin: auto;
    
   }
@@ -374,3 +416,4 @@ body {
     border-radius: 50%;
     object-fit: cover; 
   }
+
